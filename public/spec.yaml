@@ -1,0 +1,52 @@
+openapi: 3.0.0
+info:
+  title: wallet address to Image Link API
+  version: 1.0.0
+#servers:
+  #- url: https://f10e-58-19-2-216.ngrok-free.app
+paths:
+  /api/render:
+    post:
+      summary: Render wallet address to a image link
+      operationId: renderPage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                address:
+                  type: string
+                  description: The address to be rendered as an image.
+              required:
+                - address
+      responses:
+        "200":
+          description: Successfully rendered the address as a markdown image link.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  markdownImageLink:
+                    type: string
+                    description: The markdown image link containing the rendered address as a base64-encoded image.
+        "400":
+          description: Bad request. HTML and CSS are required.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string

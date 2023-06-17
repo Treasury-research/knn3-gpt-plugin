@@ -1,0 +1,32 @@
+{
+  "name": "web-render",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "@types/uuid": "^9.0.1",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "form-data": "^4.0.0",
+    "knn3-sdk": "^1.0.9",
+    "next": "13.2.4",
+    "nextjs-cors": "^2.1.2",
+    "node-fetch": "^3.3.1",
+    "playwright-aws-lambda": "^0.10.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  }
+}

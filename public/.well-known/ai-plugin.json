@@ -1,0 +1,17 @@
+{
+	"schema_version": "v1",
+	"name_for_human": "KNN3",
+	"name_for_model": "knn3",
+	"description_for_human": "Input address to render web3 data image by knn3 sdk.",
+	"description_for_model": "Input address to render web3 data image by knn3 sdk.",
+	"auth": {
+		"type": "none"
+	},
+	"api": {
+		"type": "openapi",
+		"url": "http://localhost:3000/spec.yaml"
+	},
+	"logo_url": "http://localhost:3000/logo.png",
+	"contact_email": "wen.he@knn3.xyz",
+	"legal_info_url": ""
+}
